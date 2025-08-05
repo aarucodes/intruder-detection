@@ -1,16 +1,42 @@
-# intruder-detection
-Face Recognition Attendance System (first part of the computer vision mini project)
+# Intrusion Detection System with Face Recognition and Email Alert
+
+A Python-based, real-time Intrusion Detection System (IDS) that combines motion detection, face recognition, and automatic email alerts — all integrated within a Jupyter Notebook. This system uses a webcam to monitor activity, identify authorized users, and send alerts when unknown faces are detected.
+
+---
+
+## 📌 Features
+
+-  **Motion Detection** using OpenCV's background subtraction
+-  **Face Detection** via DNN (Caffe model: `res10_300x300_ssd_iter_140000.caffemodel`)
+-  **Face Recognition** using OpenCV’s LBPH recognizer
+-  **Dataset Creation** for training with new faces
+-  **Email Alerts** with intruder snapshot
+-  **Visualization** using live frame display in Jupyter Notebook
+-  **Easy Training** over structured datasets
+
+---
+
+##  Folder Structure
+
+├── Intrusion-Detection.ipynb # Main notebook
+├── dataset/ # Face datasets
+│ ├── 1/
+│ │ ├── 1.jpg
+│ │ └── ...
+│ └── 2/
+│ ├── 1.jpg
+│ └── ...
+├── deploy.prototxt # Face detection config
+├── res10_300x300_ssd_iter_140000.caffemodel # Face detection model
+├── trainer.yml # Trained face recognizer
+└── README.md
 
 
-
-
-- `Faces/` — Directory containing reference images of people whose attendance needs to be marked.
-- `Attendance.csv` — CSV file that stores names and timestamps.
-- `face_recognition_attendance.py` — Main script to run the project.
+---
 
 ## 🔧 Requirements
 
-Install the required libraries using pip:
+Install the required dependencies:
 
 ```bash
-pip install opencv-python face_recognition numpy pillow
+pip install opencv-python opencv-contrib-python numpy matplotlib
