@@ -16,21 +16,21 @@ A Python-based, real-time Intrusion Detection System (IDS) that combines motion 
 
 ---
 
-##  Folder Structure
+## 📁 Folder Structure
 
-├── Intrusion-Detection.ipynb # Main notebook
-├── dataset/ # Face datasets
-│ ├── 1/
-│ │ ├── 1.jpg
-│ │ └── ...
-│ └── 2/
-│ ├── 1.jpg
-│ └── ...
-├── deploy.prototxt # Face detection config
-├── res10_300x300_ssd_iter_140000.caffemodel # Face detection model
-├── trainer.yml # Trained face recognizer
+```text
+├── Intrusion-Detection.ipynb 
+├── dataset/ 
+│   ├── 1/
+│   │   ├── 1.jpg
+│   │   └── ...
+│   └── 2/
+│       ├── 1.jpg
+│       └── ...
+├── deploy.prototxt                        # Face detection config
+├── res10_300x300_ssd_iter_140000.caffemodel  # Face detection model
+├── trainer.yml                            # Trained face recognizer
 └── README.md
-
 
 ---
 
