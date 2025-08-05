@@ -33,12 +33,11 @@ A Python-based, real-time Intrusion Detection System (IDS) that combines motion 
 └── README.md
 
 ---
-
-## Requirements
-
-Install the required dependencies:
 ```
-## bash
+## Requirements
+Install the required dependencies:
+
+bash
 ```
 pip install opencv-python opencv-contrib-python numpy matplotlib
 ```
