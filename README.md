@@ -4,7 +4,7 @@ A Python-based, real-time Intrusion Detection System (IDS) that combines motion 
 
 ---
 
-## 📌 Features
+## Features
 
 -  **Motion Detection** using OpenCV's background subtraction
 -  **Face Detection** via DNN (Caffe model: `res10_300x300_ssd_iter_140000.caffemodel`)
@@ -16,7 +16,7 @@ A Python-based, real-time Intrusion Detection System (IDS) that combines motion 
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```text
 ├── Intrusion-Detection.ipynb 
@@ -27,16 +27,16 @@ A Python-based, real-time Intrusion Detection System (IDS) that combines motion 
 │   └── 2/
 │       ├── 1.jpg
 │       └── ...
-├── deploy.prototxt                        # Face detection config
-├── res10_300x300_ssd_iter_140000.caffemodel  # Face detection model
-├── trainer.yml                            # Trained face recognizer
+├── deploy.prototxt                        
+├── res10_300x300_ssd_iter_140000.caffemodel  
+├── trainer.yml                           
 └── README.md
 
 ---
 
-## 🔧 Requirements
+## Requirements
 
 Install the required dependencies:
 
-```bash
+## bash
 pip install opencv-python opencv-contrib-python numpy matplotlib
